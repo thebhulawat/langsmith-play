@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "langsmith-play"
+version = "0.1.0"
+description = ""
+authors = ["namsgit <namanbhulawat@gmail.com>"]
+readme = "README.md"
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain = "^0.2.11"
+python-dotenv = "^1.0.1"
+langchain-openai = "^0.1.19"
+langserve = "^0.2.2"
+fastapi = "^0.111.1"
+sse-starlette = "^2.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+package-mode = false
