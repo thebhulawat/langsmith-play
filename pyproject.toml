@@ -12,6 +12,7 @@ langchain-openai = "^0.1.19"
 langserve = "^0.2.2"
 fastapi = "^0.111.1"
 sse-starlette = "^2.1.2"
+langchain-community = "^0.2.10"
 
 
 [build-system]
