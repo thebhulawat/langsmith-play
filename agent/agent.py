@@ -8,7 +8,7 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 
 load_dotenv()
 
-search = TavilySearchResults(max_results=2) 
+search = TavilySearchResults(max_results=2)
 search_resuts = search.invoke("what is the weather in bangalore?")
 
 
@@ -41,8 +41,7 @@ agent_executor = create_react_agent(model1, tools)
 #     print(chunk)
 #     print("----")
 # for chunk in agent_executor.stream(
-#     {"messages": [HumanMessage(content="whats the weather in sf?")]}
-# ):
+#     {"messages": [HumanMessage(content="whats the weather in sf?")]}):
 #     print(chunk)
 #     print("----")
 
