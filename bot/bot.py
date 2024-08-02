@@ -51,4 +51,5 @@ for r in with_message_history.stream(
         "language": "Hindi"
     },
     config=config
-) : print(r.content, end="|")
+) : 
+    print(r.content, end="|")

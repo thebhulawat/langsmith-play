@@ -1,8 +1,8 @@
 from dotenv import load_dotenv
 import json
-from typing import Annotated, Any
+from typing import Annotated
 from typing_extensions import TypedDict
-from langgraph.graph import StateGraph, START, END
+from langgraph.graph import StateGraph, START
 from langgraph.graph.message import add_messages
 from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import ToolMessage

@@ -1,10 +1,10 @@
 from langchain_community.tools.tavily_search import TavilySearchResults
-from langchain_anthropic import ChatAnthropic
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
 from dotenv import load_dotenv
 from langgraph.prebuilt import create_react_agent
 from langgraph.checkpoint.sqlite import SqliteSaver
+import asyncio
 
 load_dotenv()
 
@@ -71,8 +71,7 @@ async def run_agent():
             print(f"Tool output was: {event['data'].get('output')}")
             print("--")
 
-# To run the async function
-import asyncio
+
 
 memory = SqliteSaver.from_conn_string("memory")
 agent_executor = create_react_agent(model1, tools, checkpointer=memory)
